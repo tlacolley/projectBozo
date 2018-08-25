@@ -29,7 +29,7 @@ class Chouffe(Consomable):
         user.res = user.res/2
 
 
-class Vetement(Item):
+class Clothes(Item):
                         #                       Pour la duration je sais pas si on le fait en nb de combat ou en resistance 
     def __init__(self,name, description, effect, duration):
         Item.__init__(self, name)
@@ -39,7 +39,7 @@ class Vetement(Item):
         raise
 
 
-class BeetlejuiceSuit(Vetement):
+class BeetlejuiceSuit(Clothes):
     def __init__(self)
         Vetement.__init__(self,"Costume Beetlejuice", "Une grande robe sans coupe rayé noir et blanc", "Beetlejuice Petwor", 5)
 
